@@ -1,0 +1,69 @@
+{
+    "provider": {
+        "name": "pactRetailer"
+    },
+    "consumer": {
+        "name": "pactCustomer"
+    },
+    "interactions": [
+        {
+            "description": "Get order details by order id",
+            "request": {
+                "method": "GET",
+                "path": "/order/79"
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "customer": "John",
+                    "noOfItems": 3,
+                    "total": 2000
+                },
+                "matchingRules": {
+                    "body": {
+                        "$.customer": {
+                            "matchers": [
+                                {
+                                    "match": "type"
+                                }
+                            ],
+                            "combine": "AND"
+                        },
+                        "$.total": {
+                            "matchers": [
+                                {
+                                    "match": "decimal"
+                                }
+                            ],
+                            "combine": "AND"
+                        },
+                        "$.noOfItems": {
+                            "matchers": [
+                                {
+                                    "match": "integer"
+                                }
+                            ],
+                            "combine": "AND"
+                        }
+                    }
+                }
+            },
+            "providerStates": [
+                {
+                    "name": "Get order details"
+                }
+            ]
+        }
+    ],
+    "metadata": {
+        "pactSpecification": {
+            "version": "3.0.0"
+        },
+        "pact-jvm": {
+            "version": "3.5.24"
+        }
+    }
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pact.customer.consumer.RetailerContractTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-23T09:12:26" hostname="SivaJs-MacBook-Pro.local" time="0.463">
+  <properties/>
+  <testcase name="testGetOrderFromRetailer" classname="com.pact.customer.consumer.RetailerContractTests" time="0.463"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

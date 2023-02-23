@@ -1,0 +1,69 @@
+{
+    "provider": {
+        "name": "pactRetailer"
+    },
+    "consumer": {
+        "name": "pactProduct"
+    },
+    "interactions": [
+        {
+            "description": "Get item details for item id",
+            "request": {
+                "method": "GET",
+                "path": "/item/1009"
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "brand": "Apple",
+                    "name": "iPhone",
+                    "price": 1000
+                },
+                "matchingRules": {
+                    "body": {
+                        "$.brand": {
+                            "matchers": [
+                                {
+                                    "match": "type"
+                                }
+                            ],
+                            "combine": "AND"
+                        },
+                        "$.name": {
+                            "matchers": [
+                                {
+                                    "match": "type"
+                                }
+                            ],
+                            "combine": "AND"
+                        },
+                        "$.price": {
+                            "matchers": [
+                                {
+                                    "match": "decimal"
+                                }
+                            ],
+                            "combine": "AND"
+                        }
+                    }
+                }
+            },
+            "providerStates": [
+                {
+                    "name": "Get item details"
+                }
+            ]
+        }
+    ],
+    "metadata": {
+        "pactSpecification": {
+            "version": "3.0.0"
+        },
+        "pact-jvm": {
+            "version": "3.5.24"
+        }
+    }
+}

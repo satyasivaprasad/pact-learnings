@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pact.retailer.pacts.provider.ProductPactTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-23T09:31:13" hostname="SivaJs-MacBook-Pro.local" time="0.482">
+  <properties/>
+  <testcase name="pactProduct - Get item details for item id" classname="com.pact.retailer.pacts.provider.ProductPactTests" time="0.482"/>
+  <system-out><![CDATA[
+Verifying a pact between ?[1mpactProduct?[22m and ?[1mpactRetailer?[22m
+  Given ?[1mGet item details?[22m
+  Get item details for item id
+2023-02-23 15:01:13.443  INFO 18235 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-23 15:01:13.443  INFO 18235 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-02-23 15:01:13.449  INFO 18235 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+    returns a response which
+      has status code ?[1m200?[22m (?[32mOK?[m)
+      includes headers
+        "?[1mContent-Type?[22m" with value "?[1mapplication/json?[22m" (?[32mOK?[m)
+      has a matching body (?[32mOK?[m)
+2023-02-23 15:01:13.690  WARN 18235 --- [    Test worker] a.c.d.p.p.junit.InteractionRunner        : Set the provider version using the 'pact.provider.version' property. Defaulting to '0.0.0'
+2023-02-23 15:01:13.837  INFO 18235 --- [    Test worker] a.c.dius.pact.provider.ProviderVerifier  : Published verification result of 'true' for consumer 'Consumer(name=pactProduct)'
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
