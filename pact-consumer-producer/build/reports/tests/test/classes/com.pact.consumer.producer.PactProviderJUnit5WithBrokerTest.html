@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - PactProviderJUnit5WithBrokerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>PactProviderJUnit5WithBrokerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.pact.consumer.producer.html">com.pact.consumer.producer</a> &gt; PactProviderJUnit5WithBrokerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.519s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Pact between UserConsumer (0.0.1-SNAPSHOT) and UserServiceJUnit5 - A request for a user</td>
+<td class="success">pactVerificationTestTemplate(PactVerificationContext)[1]</td>
+<td class="success">0.319s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Pact between UserConsumer (0.0.1-SNAPSHOT) and UserServiceJUnit5 - A request for a user list</td>
+<td class="success">pactVerificationTestTemplate(PactVerificationContext)[2]</td>
+<td class="success">0.200s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>15:34:53.410 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [PactProviderJUnit5WithBrokerTest]: using SpringBootContextLoader
+15:34:53.412 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.pact.consumer.producer.PactProviderJUnit5WithBrokerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+15:34:53.412 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.pact.consumer.producer.PactProviderJUnit5WithBrokerTest]: PactProviderJUnit5WithBrokerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:34:53.422 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [PactProviderJUnit5WithBrokerTest]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+15:34:53.456 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/siva/FACADE/FissionLabs/coe/pact-consumer-producer/build/classes/java/main/com/pact/consumer/producer/Main.class]
+15:34:53.461 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.pact.consumer.producer.Main for test class com.pact.consumer.producer.PactProviderJUnit5WithBrokerTest
+15:34:53.502 [Test worker] DEBUG org.springframework.test.context.util.TestContextSpringFactoriesUtils - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+15:34:53.503 [Test worker] DEBUG org.springframework.test.context.util.TestContextSpringFactoriesUtils - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+15:34:53.504 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [PactProviderJUnit5WithBrokerTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+15:34:53.504 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [PactProviderJUnit5WithBrokerTest], class annotated with @DirtiesContext [false] with mode [null]
+15:34:53.515 [Test worker] DEBUG au.com.dius.pact.provider.junit5.PactVerificationInvocationContextProvider - Verifying pacts for provider 'UserServiceJUnit5' and consumer 'null'
+15:34:53.682 [Test worker] DEBUG au.com.dius.pact.provider.junit5.PactVerificationInvocationContextProvider - Pact sources on test class:
+ @au.com.dius.pact.provider.junitsupport.loader.PactSource(au.com.dius.pact.provider.junitsupport.loader.PactBrokerLoader.class)
+15:34:53.683 [Test worker] DEBUG au.com.dius.pact.provider.ProviderUtils - Pact source does not have a constructor with one argument of type Class
+15:34:53.723 [Test worker] DEBUG au.com.dius.pact.provider.junitsupport.loader.PactBrokerLoader - Loading pacts from pact broker for provider UserServiceJUnit5 and consumer version selectors []
+15:34:53.730 [Test worker] DEBUG au.com.dius.pact.core.pactbroker.HalClient - Fetching: /
+15:34:53.819 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000001 preparing request execution
+15:34:53.824 [Test worker] DEBUG org.apache.hc.client5.http.protocol.RequestAddCookies - ex-0000000001 Cookie spec selected: strict
+15:34:53.825 [Test worker] DEBUG org.apache.hc.client5.http.protocol.RequestAuthCache - ex-0000000001 Auth cache not set in the context
+15:34:53.826 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-0000000001 target auth state: UNCHALLENGED
+15:34:53.826 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-0000000001 proxy auth state: UNCHALLENGED
+15:34:53.826 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.ConnectExec - ex-0000000001 acquiring connection with route {}-&gt;http://localhost:9292
+15:34:53.826 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000001 acquiring endpoint (3 MINUTES)
+15:34:53.826 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000001 endpoint lease request (3 MINUTES) [route: {}-&gt;http://localhost:9292][total available: 0; route allocated: 0 of 5; total allocated: 0 of 25]
+15:34:53.828 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000001 endpoint leased [route: {}-&gt;http://localhost:9292][total available: 0; route allocated: 1 of 5; total allocated: 1 of 25]
+15:34:53.831 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000001 acquired ep-0000000001
+15:34:53.831 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000001 acquired endpoint ep-0000000001
+15:34:53.831 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.ConnectExec - ex-0000000001 opening connection {}-&gt;http://localhost:9292
+15:34:53.831 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000001 connecting endpoint (3 MINUTES)
+15:34:53.831 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000001 connecting endpoint to http://localhost:9292 (3 MINUTES)
+15:34:53.835 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator - http-outgoing-0 connecting to localhost/127.0.0.1:9292
+15:34:53.835 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator - http-outgoing-0 connection established 127.0.0.1:53585&lt;-&gt;127.0.0.1:9292
+15:34:53.835 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000001 connected http-outgoing-0
+15:34:53.835 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000001 endpoint connected
+15:34:53.836 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec - ex-0000000001 executing GET / HTTP/1.1
+15:34:53.836 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000001 start execution ex-0000000001
+15:34:53.836 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000001 executing exchange ex-0000000001 over http-outgoing-0
+15:34:53.836 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 &gt;&gt; GET / HTTP/1.1
+15:34:53.836 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 &gt;&gt; Content-Type: application/json
+15:34:53.836 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 &gt;&gt; Accept: application/hal+json, application/json
+15:34:53.836 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 &gt;&gt; Accept-Encoding: gzip, x-gzip, deflate
+15:34:53.836 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 &gt;&gt; Host: localhost:9292
+15:34:53.836 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 &gt;&gt; Connection: keep-alive
+15:34:53.836 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 &gt;&gt; User-Agent: Apache-HttpClient/5.1.4 (Java/19)
+15:34:53.836 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 &gt;&gt; &quot;GET / HTTP/1.1[\r][\n]&quot;
+15:34:53.836 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 &gt;&gt; &quot;Content-Type: application/json[\r][\n]&quot;
+15:34:53.836 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 &gt;&gt; &quot;Accept: application/hal+json, application/json[\r][\n]&quot;
+15:34:53.836 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 &gt;&gt; &quot;Accept-Encoding: gzip, x-gzip, deflate[\r][\n]&quot;
+15:34:53.836 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 &gt;&gt; &quot;Host: localhost:9292[\r][\n]&quot;
+15:34:53.836 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 &gt;&gt; &quot;Connection: keep-alive[\r][\n]&quot;
+15:34:53.836 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 &gt;&gt; &quot;User-Agent: Apache-HttpClient/5.1.4 (Java/19)[\r][\n]&quot;
+15:34:53.836 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 &gt;&gt; &quot;[\r][\n]&quot;
+15:34:53.895 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
+15:34:53.895 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 &lt;&lt; &quot;Vary: Accept[\r][\n]&quot;
+15:34:53.895 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 &lt;&lt; &quot;Content-Type: application/hal+json;charset=utf-8[\r][\n]&quot;
+15:34:53.895 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 &lt;&lt; &quot;Date: Thu, 23 Feb 2023 10:04:53 GMT[\r][\n]&quot;
+15:34:53.895 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 &lt;&lt; &quot;Server: Webmachine-Ruby/1.6.0 Rack/1.3[\r][\n]&quot;
+15:34:53.895 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 &lt;&lt; &quot;X-Pact-Broker-Version: 2.106.0[\r][\n]&quot;
+15:34:53.896 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 &lt;&lt; &quot;X-Content-Type-Options: nosniff[\r][\n]&quot;
+15:34:53.896 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 &lt;&lt; &quot;Content-Length: 4300[\r][\n]&quot;
+15:34:53.896 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 &lt;&lt; &quot;[\r][\n]&quot;
+15:34:53.896 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 &lt;&lt; &quot;{&quot;_links&quot;:{&quot;self&quot;:{&quot;href&quot;:&quot;http://localhost:9292&quot;,&quot;title&quot;:&quot;Index&quot;,&quot;templated&quot;:false},&quot;pb:publish-pact&quot;:{&quot;href&quot;:&quot;http://localhost:9292/pacts/provider/{provider}/consumer/{consumer}/version/{consumerApplicationVersion}&quot;,&quot;title&quot;:&quot;Publish a pact&quot;,&quot;templated&quot;:true},&quot;pb:publish-contracts&quot;:{&quot;href&quot;:&quot;http://localhost:9292/contracts/publish&quot;,&quot;title&quot;:&quot;Publish contracts&quot;,&quot;templated&quot;:false},&quot;pb:latest-pact-versions&quot;:{&quot;href&quot;:&quot;http://localhost:9292/pacts/latest&quot;,&quot;title&quot;:&quot;Latest pact versions&quot;,&quot;templated&quot;:false},&quot;pb:tagged-pact-versions&quot;:{&quot;href&quot;:&quot;http://localhost:9292/pacts/provider/{provider}/consumer/{consumer}/tag/{tag}&quot;,&quot;title&quot;:&quot;All versions of a pact for a given consumer, provider and consumer version tag&quot;,&quot;templated&quot;:false},&quot;pb:pacticipants&quot;:{&quot;href&quot;:&quot;http://localhost:9292/pacticipants&quot;,&quot;title&quot;:&quot;Pacticipants&quot;,&quot;templated&quot;:false},&quot;pb:pacticipant&quot;:{&quot;href&quot;:&quot;http://localhost:9292/pacticipants/{pacticipant}&quot;,&quot;title&quot;:&quot;Fetch pacticipant by name&quot;,&quot;templated&quot;:true},&quot;pb:latest-provider-pacts&quot;:{&quot;href&quot;:&quot;http://localhost:9292/pacts/provider/{provider}/latest&quot;,&quot;title&quot;:&quot;Latest pacts by provider&quot;,&quot;templated&quot;:true},&quot;pb:latest-provider-pacts-with-tag&quot;:{&quot;href&quot;:&quot;http://localhost:9292/pacts/provider/{provider}/latest/{tag}&quot;,&quot;title&quot;:&quot;Latest pacts for provider with the specified tag&quot;,&quot;templated&quot;:true},&quot;pb:provider-pacts-with-tag&quot;:{&quot;href&quot;:&quot;http://localhost:9292/pacts/provider/{provider}/tag/{tag}&quot;,&quot;title&quot;:&quot;All pact versions for the provider with the specified consumer version tag&quot;,&quot;templated&quot;:true},&quot;pb:provider-pacts&quot;:{&quot;href&quot;:&quot;http://localhost:9292/pacts/provider/{provider}&quot;,&quot;title&quot;:&quot;All pact versions for the specified provider&quot;,&quot;templated&quot;:true},&quot;pb:latest-version&quot;:{&quot;href&quot;:&quot;http://localhost:9292/pacticipants/{pacticipant}/latest-version&quot;,&quot;title&quot;:&quot;Latest pacticipant version&quot;,&quot;templated&quot;:true},&quot;pb:latest-tagged-version&quot;:{&quot;href&quot;:&quot;http://localhost:9292/pacticipants/{pacticipant}/latest-version/{tag}&quot;,&quot;title&quot;:&quot;Latest pacticipant version with the specified tag&quot;,&quot;templated&quot;:true},&quot;pb:webhooks&quot;:{&quot;href&quot;:&quot;http://localhost:9292/webhooks&quot;,&quot;title&quot;:&quot;Webhooks&quot;,&quot;templated&quot;:false},&quot;pb:webhook&quot;:{&quot;href&quot;:&quot;http://localhost:9292/webhooks/{uuid}&quot;,&quot;title&quot;:&quot;Webhook&quot;,&quot;templated&quot;:true},&quot;pb:integrations&quot;:{&quot;href&quot;:&quot;http://localhost:9292/integrations&quot;,&quot;title&quot;:&quot;Integrations&quot;,&quot;templated&quot;:false},&quot;pb:pacticipant-version-tag&quot;:{&quot;href&quot;:&quot;http://localhost:9292/pacticipants/{pacticipant}/versions/{version}/tags/{tag}&quot;,&quot;title&quot;:&quot;Get, create or delete a tag for a pacticipant version&quot;,&quot;templated&quot;:true},&quot;pb:pacticipant-branch-version&quot;:{&quot;href&quot;:&quot;http://localhost:9292/pacticipants/{pacticipant}/branches/{branch}/versions/{version}&quot;,&quot;title&quot;:&quot;Get or add/create a pacticipant version for a branch&quot;,&quot;templated&quot;:true},&quot;pb:pacticipant-version&quot;:{&quot;href&quot;:&quot;http://localhost:9292/pacticipants/{pacticipant}/versions/{version}&quot;,&quot;title&quot;:&quot;Get, create or delete a pacticipant version&quot;,&quot;templated&quot;:true},&quot;pb:metrics&quot;:{&quot;href&quot;:&quot;http://localhost:9292/metrics&quot;,&quot;title&quot;:&quot;Get Pact Broker metrics&quot;},&quot;pb:can-i-deploy-pacticipant-version-to-tag&quot;:{&quot;href&quot;:&quot;http://localhost:9292/can-i-deploy?pacticipant={pacticipant}&amp;version={version}&amp;to={tag}&quot;,&quot;title&quot;:&quot;Determine if an application version can be safely deployed to an environment identified by the given tag&quot;,&quot;templated&quot;:true},&quot;pb:can-i-deploy-pacticipant-version-to-environment&quot;:{&quot;href&quot;:&quot;http://localhost:9292/can-i-deploy?pacticipant={pacticipant}&amp;version={version}&amp;environment={environment}&quot;,&quot;title&quot;:&quot;Determine if an application version can be safely deployed to an environment&quot;,&quot;templated&quot;:true},&quot;pb:provider-pacts-for-verification&quot;:{&quot;href&quot;:&quot;http://localhost:9292/pacts/provider/{provider}/for-verification&quot;,&quot;title&quot;:&quot;Pact versions to be verified for the specified provider&quot;,&quot;templated&quot;:true},&quot;beta:provider-pacts-for-verification&quot;:{&quot;name&quot;:&quot;beta&quot;,&quot;href&quot;:&quot;http://localhost:9292/pacts/provider/{provider}/for-verification&quot;,&quot;title&quot;:&quot;DEPRECATED - please use pb:provider-pacts-for-verification&quot;,&quot;templated&quot;:true},&quot;curies&quot;:[{&quot;name&quot;:&quot;pb&quot;,&quot;href&quot;:&quot;http://localhost:9292/doc/{rel}?context=index&quot;,&quot;templated&quot;:true},{&quot;name&quot;:&quot;beta&quot;,&quot;href&quot;:&quot;http://localhost:9292/doc/{rel}?context=index&quot;,&quot;templated&quot;:true}],&quot;pb:environments&quot;:{&quot;title&quot;:&quot;Environments&quot;,&quot;href&quot;:&quot;http://localhost:9292/environments&quot;,&quot;templated&quot;:false},&quot;pb:environment&quot;:{&quot;title&quot;:&quot;Environment&quot;,&quot;href&quot;:&quot;http://localhost:9292/environments/{uuid}&quot;,&quot;templated&quot;:true}}}&quot;
+15:34:53.897 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 &lt;&lt; HTTP/1.1 200 OK
+15:34:53.897 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 &lt;&lt; Vary: Accept
+15:34:53.897 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 &lt;&lt; Content-Type: application/hal+json;charset=utf-8
+15:34:53.897 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 &lt;&lt; Date: Thu, 23 Feb 2023 10:04:53 GMT
+15:34:53.897 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 &lt;&lt; Server: Webmachine-Ruby/1.6.0 Rack/1.3
+15:34:53.897 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 &lt;&lt; X-Pact-Broker-Version: 2.106.0
+15:34:53.897 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 &lt;&lt; X-Content-Type-Options: nosniff
+15:34:53.897 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 &lt;&lt; Content-Length: 4300
+15:34:53.899 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec - ex-0000000001 connection can be kept alive for 3 MINUTES
+15:34:53.902 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000001 releasing valid endpoint
+15:34:53.902 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000001 releasing endpoint
+15:34:53.902 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000001 connection http-outgoing-0 can be kept alive for 3 MINUTES
+15:34:53.902 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000001 connection released [route: {}-&gt;http://localhost:9292][total available: 1; route allocated: 1 of 5; total allocated: 1 of 25]
+15:34:53.914 [Test worker] DEBUG au.com.dius.pact.core.pactbroker.PactBrokerClient - Fetching pacts using the pactsForVerification endpoint
+15:34:53.919 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000002 preparing request execution
+15:34:53.919 [Test worker] DEBUG org.apache.hc.client5.http.protocol.RequestAddCookies - ex-0000000002 Cookie spec selected: strict
+15:34:53.919 [Test worker] DEBUG org.apache.hc.client5.http.protocol.RequestAuthCache - ex-0000000002 Auth cache not set in the context
+15:34:53.919 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-0000000002 target auth state: UNCHALLENGED
+15:34:53.919 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-0000000002 proxy auth state: UNCHALLENGED
+15:34:53.919 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.ConnectExec - ex-0000000002 acquiring connection with route {}-&gt;http://localhost:9292
+15:34:53.919 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000002 acquiring endpoint (3 MINUTES)
+15:34:53.919 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000002 endpoint lease request (3 MINUTES) [route: {}-&gt;http://localhost:9292][total available: 1; route allocated: 1 of 5; total allocated: 1 of 25]
+15:34:53.919 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000002 endpoint leased [route: {}-&gt;http://localhost:9292][total available: 0; route allocated: 1 of 5; total allocated: 1 of 25]
+15:34:53.919 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000002 acquired ep-0000000002
+15:34:53.919 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000002 acquired endpoint ep-0000000002
+15:34:53.919 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec - ex-0000000002 executing POST /pacts/provider/UserServiceJUnit5/for-verification HTTP/1.1
+15:34:53.920 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000002 start execution ex-0000000002
+15:34:53.920 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000002 executing exchange ex-0000000002 over http-outgoing-0
+15:34:53.920 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 &gt;&gt; POST /pacts/provider/UserServiceJUnit5/for-verification HTTP/1.1
+15:34:53.920 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 &gt;&gt; Content-Type: application/json; charset=UTF-8
+15:34:53.920 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 &gt;&gt; Accept: application/hal+json, application/json
+15:34:53.920 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 &gt;&gt; Accept-Encoding: gzip, x-gzip, deflate
+15:34:53.920 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 &gt;&gt; Content-Length: 60
+15:34:53.920 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 &gt;&gt; Host: localhost:9292
+15:34:53.920 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 &gt;&gt; Connection: keep-alive
+15:34:53.920 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 &gt;&gt; User-Agent: Apache-HttpClient/5.1.4 (Java/19)
+15:34:53.920 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 &gt;&gt; &quot;POST /pacts/provider/UserServiceJUnit5/for-verification HTTP/1.1[\r][\n]&quot;
+15:34:53.920 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 &gt;&gt; &quot;Content-Type: application/json; charset=UTF-8[\r][\n]&quot;
+15:34:53.920 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 &gt;&gt; &quot;Accept: application/hal+json, application/json[\r][\n]&quot;
+15:34:53.920 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 &gt;&gt; &quot;Accept-Encoding: gzip, x-gzip, deflate[\r][\n]&quot;
+15:34:53.920 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 &gt;&gt; &quot;Content-Length: 60[\r][\n]&quot;
+15:34:53.920 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 &gt;&gt; &quot;Host: localhost:9292[\r][\n]&quot;
+15:34:53.920 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 &gt;&gt; &quot;Connection: keep-alive[\r][\n]&quot;
+15:34:53.920 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 &gt;&gt; &quot;User-Agent: Apache-HttpClient/5.1.4 (Java/19)[\r][\n]&quot;
+15:34:53.920 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 &gt;&gt; &quot;[\r][\n]&quot;
+15:34:53.920 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 &gt;&gt; &quot;{&quot;consumerVersionSelectors&quot;:[],&quot;includePendingStatus&quot;:false}&quot;
+15:34:54.009 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
+15:34:54.010 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 &lt;&lt; &quot;Vary: Accept[\r][\n]&quot;
+15:34:54.010 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 &lt;&lt; &quot;Content-Type: application/hal+json;charset=utf-8[\r][\n]&quot;
+15:34:54.010 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 &lt;&lt; &quot;Date: Thu, 23 Feb 2023 10:04:54 GMT[\r][\n]&quot;
+15:34:54.010 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 &lt;&lt; &quot;Server: Webmachine-Ruby/1.6.0 Rack/1.3[\r][\n]&quot;
+15:34:54.010 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 &lt;&lt; &quot;X-Pact-Broker-Version: 2.106.0[\r][\n]&quot;
+15:34:54.010 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 &lt;&lt; &quot;X-Content-Type-Options: nosniff[\r][\n]&quot;
+15:34:54.010 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 &lt;&lt; &quot;Content-Length: 886[\r][\n]&quot;
+15:34:54.010 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 &lt;&lt; &quot;[\r][\n]&quot;
+15:34:54.010 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 &lt;&lt; &quot;{&quot;_embedded&quot;:{&quot;pacts&quot;:[{&quot;shortDescription&quot;:&quot;latest&quot;,&quot;verificationProperties&quot;:{&quot;notices&quot;:[{&quot;when&quot;:&quot;before_verification&quot;,&quot;text&quot;:&quot;The pact at http://localhost:9292/pacts/provider/UserServiceJUnit5/consumer/UserConsumer/pact-version/d26ee310cec3ba52ca61e73fb09aec9023510079 is being verified because the pact content belongs to the consumer version matching the following criterion:\n    * latest version of UserConsumer that has a pact with UserServiceJUnit5 (0.0.1-SNAPSHOT)&quot;}]},&quot;_links&quot;:{&quot;self&quot;:{&quot;href&quot;:&quot;http://localhost:9292/pacts/provider/UserServiceJUnit5/consumer/UserConsumer/pact-version/d26ee310cec3ba52ca61e73fb09aec9023510079/metadata/c1tdW2xdPXRydWUmc1tdW2N2XT0xMw&quot;,&quot;name&quot;:&quot;Pact between UserConsumer (0.0.1-SNAPSHOT) and UserServiceJUnit5&quot;}}}]},&quot;_links&quot;:{&quot;self&quot;:{&quot;href&quot;:&quot;http://localhost:9292/pacts/provider/UserServiceJUnit5/for-verification&quot;,&quot;title&quot;:&quot;Pacts to be verified&quot;}}}&quot;
+15:34:54.010 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 &lt;&lt; HTTP/1.1 200 OK
+15:34:54.010 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 &lt;&lt; Vary: Accept
+15:34:54.010 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 &lt;&lt; Content-Type: application/hal+json;charset=utf-8
+15:34:54.010 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 &lt;&lt; Date: Thu, 23 Feb 2023 10:04:54 GMT
+15:34:54.010 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 &lt;&lt; Server: Webmachine-Ruby/1.6.0 Rack/1.3
+15:34:54.010 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 &lt;&lt; X-Pact-Broker-Version: 2.106.0
+15:34:54.010 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 &lt;&lt; X-Content-Type-Options: nosniff
+15:34:54.010 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 &lt;&lt; Content-Length: 886
+15:34:54.010 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec - ex-0000000002 connection can be kept alive for 3 MINUTES
+15:34:54.011 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000002 releasing valid endpoint
+15:34:54.011 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000002 releasing endpoint
+15:34:54.011 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000002 connection http-outgoing-0 can be kept alive for 3 MINUTES
+15:34:54.011 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000002 connection released [route: {}-&gt;http://localhost:9292][total available: 1; route allocated: 1 of 5; total allocated: 1 of 25]
+15:34:54.015 [Test worker] DEBUG au.com.dius.pact.core.pactbroker.HalClient - Fetching: http://localhost:9292/pacts/provider/UserServiceJUnit5/consumer/UserConsumer/pact-version/d26ee310cec3ba52ca61e73fb09aec9023510079/metadata/c1tdW2xdPXRydWUmc1tdW2N2XT0xMw
+15:34:54.016 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000003 preparing request execution
+15:34:54.016 [Test worker] DEBUG org.apache.hc.client5.http.protocol.RequestAddCookies - ex-0000000003 Cookie spec selected: strict
+15:34:54.016 [Test worker] DEBUG org.apache.hc.client5.http.protocol.RequestAuthCache - ex-0000000003 Auth cache not set in the context
+15:34:54.016 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-0000000003 target auth state: UNCHALLENGED
+15:34:54.016 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-0000000003 proxy auth state: UNCHALLENGED
+15:34:54.016 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.ConnectExec - ex-0000000003 acquiring connection with route {}-&gt;http://localhost:9292
+15:34:54.016 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000003 acquiring endpoint (3 MINUTES)
+15:34:54.016 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000003 endpoint lease request (3 MINUTES) [route: {}-&gt;http://localhost:9292][total available: 0; route allocated: 0 of 5; total allocated: 0 of 25]
+15:34:54.016 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000003 endpoint leased [route: {}-&gt;http://localhost:9292][total available: 0; route allocated: 1 of 5; total allocated: 1 of 25]
+15:34:54.016 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000003 acquired ep-0000000003
+15:34:54.016 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000003 acquired endpoint ep-0000000003
+15:34:54.017 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.ConnectExec - ex-0000000003 opening connection {}-&gt;http://localhost:9292
+15:34:54.017 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000003 connecting endpoint (3 MINUTES)
+15:34:54.017 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000003 connecting endpoint to http://localhost:9292 (3 MINUTES)
+15:34:54.017 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator - http-outgoing-1 connecting to localhost/127.0.0.1:9292
+15:34:54.017 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator - http-outgoing-1 connection established 127.0.0.1:53586&lt;-&gt;127.0.0.1:9292
+15:34:54.017 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000003 connected http-outgoing-1
+15:34:54.017 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000003 endpoint connected
+15:34:54.017 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec - ex-0000000003 executing GET /pacts/provider/UserServiceJUnit5/consumer/UserConsumer/pact-version/d26ee310cec3ba52ca61e73fb09aec9023510079/metadata/c1tdW2xdPXRydWUmc1tdW2N2XT0xMw HTTP/1.1
+15:34:54.017 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000003 start execution ex-0000000003
+15:34:54.017 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000003 executing exchange ex-0000000003 over http-outgoing-1
+15:34:54.017 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &gt;&gt; GET /pacts/provider/UserServiceJUnit5/consumer/UserConsumer/pact-version/d26ee310cec3ba52ca61e73fb09aec9023510079/metadata/c1tdW2xdPXRydWUmc1tdW2N2XT0xMw HTTP/1.1
+15:34:54.017 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &gt;&gt; Content-Type: application/json
+15:34:54.017 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &gt;&gt; Accept: application/hal+json, application/json
+15:34:54.017 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &gt;&gt; Accept-Encoding: gzip, x-gzip, deflate
+15:34:54.017 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &gt;&gt; Host: localhost:9292
+15:34:54.017 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &gt;&gt; Connection: keep-alive
+15:34:54.017 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &gt;&gt; User-Agent: Apache-HttpClient/5.1.4 (Java/19)
+15:34:54.017 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &gt;&gt; &quot;GET /pacts/provider/UserServiceJUnit5/consumer/UserConsumer/pact-version/d26ee310cec3ba52ca61e73fb09aec9023510079/metadata/c1tdW2xdPXRydWUmc1tdW2N2XT0xMw HTTP/1.1[\r][\n]&quot;
+15:34:54.017 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &gt;&gt; &quot;Content-Type: application/json[\r][\n]&quot;
+15:34:54.018 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &gt;&gt; &quot;Accept: application/hal+json, application/json[\r][\n]&quot;
+15:34:54.018 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &gt;&gt; &quot;Accept-Encoding: gzip, x-gzip, deflate[\r][\n]&quot;
+15:34:54.018 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &gt;&gt; &quot;Host: localhost:9292[\r][\n]&quot;
+15:34:54.018 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &gt;&gt; &quot;Connection: keep-alive[\r][\n]&quot;
+15:34:54.018 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &gt;&gt; &quot;User-Agent: Apache-HttpClient/5.1.4 (Java/19)[\r][\n]&quot;
+15:34:54.018 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &gt;&gt; &quot;[\r][\n]&quot;
+15:34:54.058 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
+15:34:54.058 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Vary: Accept[\r][\n]&quot;
+15:34:54.058 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Content-Type: application/hal+json;charset=utf-8[\r][\n]&quot;
+15:34:54.058 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Date: Thu, 23 Feb 2023 10:04:54 GMT[\r][\n]&quot;
+15:34:54.058 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Server: Webmachine-Ruby/1.6.0 Rack/1.3[\r][\n]&quot;
+15:34:54.058 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;X-Pact-Broker-Version: 2.106.0[\r][\n]&quot;
+15:34:54.058 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;X-Content-Type-Options: nosniff[\r][\n]&quot;
+15:34:54.058 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;Content-Length: 5859[\r][\n]&quot;
+15:34:54.058 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;[\r][\n]&quot;
+15:34:54.059 [Test worker] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 &lt;&lt; &quot;{&quot;consumer&quot;:{&quot;name&quot;:&quot;UserConsumer&quot;},&quot;interactions&quot;:[{&quot;_id&quot;:&quot;2dc3bf8edab79041b1e0dda4f40752e6d73bff60&quot;,&quot;comments&quot;:{&quot;text&quot;:[]},&quot;description&quot;:&quot;A request for a user&quot;,&quot;key&quot;:&quot;5fa8fa6b&quot;,&quot;pending&quot;:false,&quot;providerStates&quot;:[{&quot;name&quot;:&quot;A running user service&quot;}],&quot;request&quot;:{&quot;method&quot;:&quot;GET&quot;,&quot;path&quot;:&quot;/users/1&quot;},&quot;response&quot;:{&quot;body&quot;:{&quot;content&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Jane Doe&quot;},&quot;contentType&quot;:&quot;application/json&quot;,&quot;encoded&quot;:false},&quot;headers&quot;:{&quot;Content-Type&quot;:[&quot;application/json&quot;]},&quot;matchingRules&quot;:{&quot;body&quot;:{&quot;$.id&quot;:{&quot;combine&quot;:&quot;AND&quot;,&quot;matchers&quot;:[{&quot;match&quot;:&quot;integer&quot;},{&quot;match&quot;:&quot;regex&quot;,&quot;regex&quot;:&quot;[0-9]*&quot;}]},&quot;$.name&quot;:{&quot;combine&quot;:&quot;AND&quot;,&quot;matchers&quot;:[{&quot;match&quot;:&quot;regex&quot;,&quot;regex&quot;:&quot;[a-zA-Z ]*&quot;}]}}},&quot;status&quot;:200},&quot;transport&quot;:&quot;https&quot;,&quot;type&quot;:&quot;Synchronous/HTTP&quot;},{&quot;_id&quot;:&quot;e363a0a01dab9d6eef8ea17c59923bf74e80e3bd&quot;,&quot;comments&quot;:{&quot;text&quot;:[]},&quot;description&quot;:&quot;A request for a user list&quot;,&quot;key&quot;:&quot;2149737f&quot;,&quot;pending&quot;:false,&quot;providerStates&quot;:[{&quot;name&quot;:&quot;A running user service&quot;}],&quot;request&quot;:{&quot;method&quot;:&quot;GET&quot;,&quot;path&quot;:&quot;/users&quot;},&quot;response&quot;:{&quot;body&quot;:{&quot;content&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;Jane Doe&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;John Doe&quot;}],&quot;contentType&quot;:&quot;application/json&quot;,&quot;encoded&quot;:false},&quot;headers&quot;:{&quot;Content-Type&quot;:[&quot;application/json&quot;]},&quot;matchingRules&quot;:{&quot;body&quot;:{&quot;$[0].id&quot;:{&quot;combine&quot;:&quot;AND&quot;,&quot;matchers&quot;:[{&quot;match&quot;:&quot;integer&quot;},{&quot;match&quot;:&quot;regex&quot;,&quot;regex&quot;:&quot;[0-9]*&quot;}]},&quot;$[0].name&quot;:{&quot;combine&quot;:&quot;AND&quot;,&quot;matchers&quot;:[{&quot;match&quot;:&quot;regex&quot;,&quot;regex&quot;:&quot;[a-zA-Z ]*&quot;}]},&quot;$[1].id&quot;:{&quot;combine&quot;:&quot;AND&quot;,&quot;matchers&quot;:[{&quot;match&quot;:&quot;integer&quot;},{&quot;match&quot;:&quot;regex&quot;,&quot;regex&quot;:&quot;[0-9]*&quot;}]},&quot;$[1].name&quot;:{&quot;combine&quot;:&quot;AND&quot;,&quot;matchers&quot;:[{&quot;match&quot;:&quot;regex&quot;,&quot;regex&quot;:&quot;[a-zA-Z ]*&quot;}]}}},&quot;status&quot;:200},&quot;transport&quot;:&quot;https&quot;,&quot;type&quot;:&quot;Synchronous/HTTP&quot;}],&quot;metadata&quot;:{&quot;pact-jvm&quot;:{&quot;version&quot;:&quot;4.4.2&quot;},&quot;pactSpecification&quot;:{&quot;version&quot;:&quot;4.0&quot;}},&quot;provider&quot;:{&quot;name&quot;:&quot;UserServiceJUnit5&quot;},&quot;createdAt&quot;:&quot;2023-02-23T10:03:27+00:00&quot;,&quot;_links&quot;:{&quot;self&quot;:{&quot;title&quot;:&quot;Pact&quot;,&quot;name&quot;:&quot;Pact between UserConsumer (0.0.1-SNAPSHOT) and UserServiceJUnit5&quot;,&quot;href&quot;:&quot;http://localhost:9292/pacts/provider/UserServiceJUnit5/consumer/UserConsumer/version/0.0.1-SNAPSHOT&quot;},&quot;pb:consumer&quot;:{&quot;title&quot;:&quot;Consumer&quot;,&quot;name&quot;:&quot;UserConsumer&quot;,&quot;href&quot;:&quot;http://localhost:9292/pacticipants/UserConsumer&quot;},&quot;pb:consumer-version&quot;:{&quot;title&quot;:&quot;Consumer version&quot;,&quot;name&quot;:&quot;0.0.1-SNAPSHOT&quot;,&quot;href&quot;:&quot;http://localhost:9292/pacticipants/UserConsumer/versions/0.0.1-SNAPSHOT&quot;},&quot;pb:consumer-versions&quot;:[{&quot;title&quot;:&quot;Consumer version&quot;,&quot;name&quot;:&quot;0.0.1-SNAPSHOT&quot;,&quot;href&quot;:&quot;http://localhost:9292/pacticipants/UserConsumer/versions/0.0.1-SNAPSHOT&quot;}],&quot;pb:provider&quot;:{&quot;title&quot;:&quot;Provider&quot;,&quot;name&quot;:&quot;UserServiceJUnit5&quot;,&quot;href&quot;:&quot;http://localhost:9292/pacticipants/UserServiceJUnit5&quot;},&quot;pb:pact-version&quot;:{&quot;title&quot;:&quot;Pact content version permalink&quot;,&quot;name&quot;:&quot;d26ee310cec3ba52ca61e73fb09aec9023510079&quot;,&quot;href&quot;:&quot;http://localhost:9292/pacts/provider/UserServiceJUnit5/consumer/UserConsumer/pact-version/d26ee310cec3ba52ca61e73fb09aec9023510079&quot;},&quot;pb:latest-pact-version&quot;:{&quot;title&quot;:&quot;Latest version of this pact&quot;,&quot;href&quot;:&quot;http://localhost:9292/pacts/provider/UserServiceJUnit5/consumer/UserConsumer/latest&quot;},&quot;pb:all-pact-versions&quot;:{&quot;title&quot;:&quot;All versions of this pact&quot;,&quot;href&quot;:&quot;http://localhost:9292/pacts/provider/UserServiceJUnit5/consumer/UserConsumer/versions&quot;},&quot;pb:latest-untagged-pact-version&quot;:{&quot;title&quot;:&quot;Latest untagged version of this pact&quot;,&quot;href&quot;:&quot;http://localhost:9292/pacts/provider/UserServiceJUnit5/consumer/UserConsumer/latest-untagged&quot;},&quot;pb:latest-tagged-pact-version&quot;:{&quot;title&quot;:&quot;Latest tagged version of this pact&quot;,&quot;href&quot;:&quot;http://localhost:9292/pacts/provider/UserServiceJUnit5/consumer/UserConsumer/latest/{tag}&quot;,&quot;templated&quot;:true},&quot;pb:previous-distinct&quot;:{&quot;title&quot;:&quot;Previous distinct version of this pact&quot;,&quot;href&quot;:&quot;http://localhost:9292/pacts/provider/UserServiceJUnit5/consumer/UserConsumer/version/0.0.1-SNAPSHOT/previous-distinct&quot;},&quot;pb:diff-previous-distinct&quot;:{&quot;title&quot;:&quot;Diff with previous distinct version of this pact&quot;,&quot;href&quot;:&quot;http://localhost:9292/pacts/provider/UserServiceJUnit5/consumer/UserConsumer/version/0.0.1-SNAPSHOT/diff/previous-distinct&quot;},&quot;pb:diff&quot;:{&quot;title&quot;:&quot;Diff with another specified version of this pact&quot;,&quot;href&quot;:&quot;http://localhost:9292/pacts/provider/UserServiceJUnit5/consumer/UserConsumer/pact-version/d26ee310cec3ba52ca61e73fb09aec9023510079/diff/pact-version/{pactVersion}&quot;,&quot;templated&quot;:true},&quot;pb:pact-webhooks&quot;:{&quot;title&quot;:&quot;Webhooks for the pact between UserConsumer and UserServiceJUnit5&quot;,&quot;href&quot;:&quot;http://localhost:9292/webhooks/provider/UserServiceJUnit5/consumer/UserConsumer&quot;},&quot;pb:consumer-webhooks&quot;:{&quot;title&quot;:&quot;Webhooks for all pacts with provider UserServiceJUnit5&quot;,&quot;href&quot;:&quot;http://localhost:9292/webhooks/consumer/UserServiceJUnit5&quot;},&quot;pb:tag-prod-version&quot;:{&quot;title&quot;:&quot;PUT to this resource to tag this consumer version as 'production'&quot;,&quot;href&quot;:&quot;http://localhost:9292/pacticipants/UserConsumer/versions/0.0.1-SNAPSHOT/tags/prod&quot;},&quot;pb:tag-version&quot;:{&quot;title&quot;:&quot;PUT to this resource to tag this consumer version&quot;,&quot;href&quot;:&quot;http://localhost:9292/pacticipants/UserConsumer/versions/0.0.1-SNAPSHOT/tags/{tag}&quot;},&quot;pb:publish-verification-results&quot;:{&quot;title&quot;:&quot;Publish verification results&quot;,&quot;href&quot;:&quot;http://localhost:9292/pacts/provider/UserServiceJUnit5/consumer/UserConsumer/pact-version/d26ee310cec3ba52ca61e73fb09aec9023510079/metadata/c1tdW2xdPXRydWUmc1tdW2N2XT0xMw/verification-results&quot;},&quot;pb:latest-verification-results&quot;:{&quot;href&quot;:&quot;http://localhost:9292/pacts/provider/UserServiceJUnit5/consumer/UserConsumer/pact-version/d26ee310cec3ba52ca61e73fb09aec9023510079/verification-results/latest&quot;},&quot;pb:triggered-webhooks&quot;:{&quot;title&quot;:&quot;Webhooks triggered by the publication of this pact&quot;,&quot;href&quot;:&quot;http://localhost:9292/pacts/provider/UserServiceJUnit5/consumer/UserConsumer/version/0.0.1-SNAPSHOT/triggered-webhooks&quot;},&quot;pb:matrix-for-consumer-version&quot;:{&quot;title&quot;:&quot;View matrix rows for the consumer version to which this pact belongs&quot;,&quot;href&quot;:&quot;http://localhost:9292/matrix?q[][pacticipant]=UserConsumer&amp;q[][version]=0.0.1-SNAPSHOT&amp;latestby=cvpv&quot;},&quot;curies&quot;:[{&quot;name&quot;:&quot;pb&quot;,&quot;href&quot;:&quot;http://localhost:9292/doc/{rel}?context=pact&quot;,&quot;templated&quot;:true}]}}&quot;
+15:34:54.059 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; HTTP/1.1 200 OK
+15:34:54.059 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Vary: Accept
+15:34:54.059 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Content-Type: application/hal+json;charset=utf-8
+15:34:54.059 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Date: Thu, 23 Feb 2023 10:04:54 GMT
+15:34:54.059 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Server: Webmachine-Ruby/1.6.0 Rack/1.3
+15:34:54.059 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; X-Pact-Broker-Version: 2.106.0
+15:34:54.059 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; X-Content-Type-Options: nosniff
+15:34:54.059 [Test worker] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 &lt;&lt; Content-Length: 5859
+15:34:54.059 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.MainClientExec - ex-0000000003 connection can be kept alive for 3 MINUTES
+15:34:54.059 [Test worker] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000003 releasing valid endpoint
+15:34:54.059 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000003 releasing endpoint
+15:34:54.059 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000003 connection http-outgoing-1 can be kept alive for 3 MINUTES
+15:34:54.059 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000003 connection released [route: {}-&gt;http://localhost:9292][total available: 1; route allocated: 1 of 5; total allocated: 1 of 25]
+15:34:54.061 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - Shutdown connection pool GRACEFUL
+15:34:54.061 [Test worker] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - Connection pool shut down
+15:34:54.161 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test class com.pact.consumer.producer.PactProviderJUnit5WithBrokerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.0)
+
+2023-02-23T15:34:54.275+05:30  WARN 22437 --- [    Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/Users/siva/.gradle/caches/modules-2/files-2.1/org.json/json/20220924/5aa95e7688f76c664af205c5937620f02688dfbc/json-20220924.jar!/org/json/JSONObject.class
+	jar:file:/Users/siva/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2023-02-23T15:34:54.280+05:30  INFO 22437 --- [    Test worker] c.p.c.p.PactProviderJUnit5WithBrokerTest : Starting PactProviderJUnit5WithBrokerTest using Java 19 with PID 22437 (started by siva in /Users/siva/FACADE/FissionLabs/coe/pact-consumer-producer)
+2023-02-23T15:34:54.280+05:30  INFO 22437 --- [    Test worker] c.p.c.p.PactProviderJUnit5WithBrokerTest : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-02-23T15:34:54.715+05:30  INFO 22437 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-02-23T15:34:54.720+05:30  INFO 22437 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-23T15:34:54.720+05:30  INFO 22437 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-02-23T15:34:54.762+05:30  INFO 22437 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-23T15:34:54.762+05:30  INFO 22437 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 395 ms
+2023-02-23T15:34:54.986+05:30  INFO 22437 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 53587 (http) with context path ''
+2023-02-23T15:34:54.990+05:30  INFO 22437 --- [    Test worker] c.p.c.p.PactProviderJUnit5WithBrokerTest : Started PactProviderJUnit5WithBrokerTest in 0.818 seconds (process running for 2.043)
+2023-02-23T15:34:55.158+05:30  INFO 22437 --- [    Test worker] p.j.PactVerificationStateChangeExtension : Invoking state change method 'A running user service':SETUP
+
+Verifying a pact between UserConsumer (0.0.1-SNAPSHOT) and UserServiceJUnit5
+
+  Notices:
+    1) The pact at http://localhost:9292/pacts/provider/UserServiceJUnit5/consumer/UserConsumer/pact-version/d26ee310cec3ba52ca61e73fb09aec9023510079 is being verified because the pact content belongs to the consumer version matching the following criterion:
+    * latest version of UserConsumer that has a pact with UserServiceJUnit5 (0.0.1-SNAPSHOT)
+
+  [from Pact Broker http://localhost:9292/pacts/provider/UserServiceJUnit5/consumer/UserConsumer/pact-version/d26ee310cec3ba52ca61e73fb09aec9023510079/metadata/c1tdW2xdPXRydWUmc1tdW2N2XT0xMw]
+  Given A running user service
+  A request for a user
+
+  Comments:
+
+2023-02-23T15:34:55.217+05:30  WARN 22437 --- [       Thread-4] au.com.dius.pact.core.support.Metrics    : 
+            Please note: we are tracking events anonymously to gather important usage statistics like JVM version
+            and operating system. To disable tracking, set the 'pact_do_not_track' system property or environment
+            variable to 'true'.
+            
+2023-02-23T15:34:55.249+05:30  INFO 22437 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-23T15:34:55.249+05:30  INFO 22437 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-02-23T15:34:55.250+05:30  INFO 22437 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+    returns a response which
+      has status code 200 (OK)
+      has a matching body (OK)
+2023-02-23T15:34:55.309+05:30  WARN 22437 --- [    Test worker] a.c.d.p.p.DefaultTestResultAccumulator   : Not all of the 2 were verified. The following were missing:
+2023-02-23T15:34:55.309+05:30  WARN 22437 --- [    Test worker] a.c.d.p.p.DefaultTestResultAccumulator   :     A request for a user list
+2023-02-23T15:34:55.316+05:30  INFO 22437 --- [    Test worker] p.j.PactVerificationStateChangeExtension : Invoking state change method 'A running user service':SETUP
+
+Verifying a pact between UserConsumer (0.0.1-SNAPSHOT) and UserServiceJUnit5
+
+  Notices:
+    1) The pact at http://localhost:9292/pacts/provider/UserServiceJUnit5/consumer/UserConsumer/pact-version/d26ee310cec3ba52ca61e73fb09aec9023510079 is being verified because the pact content belongs to the consumer version matching the following criterion:
+    * latest version of UserConsumer that has a pact with UserServiceJUnit5 (0.0.1-SNAPSHOT)
+
+  [from Pact Broker http://localhost:9292/pacts/provider/UserServiceJUnit5/consumer/UserConsumer/pact-version/d26ee310cec3ba52ca61e73fb09aec9023510079/metadata/c1tdW2xdPXRydWUmc1tdW2N2XT0xMw]
+  Given A running user service
+  A request for a user list
+
+  Comments:
+
+    returns a response which
+      has status code 200 (OK)
+      has a matching body (OK)
+2023-02-23T15:34:55.342+05:30  WARN 22437 --- [    Test worker] a.c.dius.pact.provider.ProviderVersion   : Provider version not set, defaulting to '0.0.0'
+2023-02-23T15:34:55.513+05:30  INFO 22437 --- [    Test worker] a.c.d.p.p.DefaultVerificationReporter    : Published verification result of 'Ok(interactionIds=[2dc3bf8edab79041b1e0dda4f40752e6d73bff60, e363a0a01dab9d6eef8ea17c59923bf74e80e3bd])' for consumer 'Consumer(name=UserConsumer)'
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.6</a> at 23-Feb-2023, 3:34:56 pm</p>
+</div>
+</div>
+</body>
+</html>

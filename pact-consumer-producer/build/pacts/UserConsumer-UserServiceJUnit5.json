@@ -1,0 +1,169 @@
+{
+  "consumer": {
+    "name": "UserConsumer"
+  },
+  "interactions": [
+    {
+      "comments": {
+        "text": [
+
+        ]
+      },
+      "description": "A request for a user",
+      "key": "5fa8fa6b",
+      "pending": false,
+      "providerStates": [
+        {
+          "name": "A running user service"
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "path": "/users/1"
+      },
+      "response": {
+        "body": {
+          "content": {
+            "id": 1,
+            "name": "Jane Doe"
+          },
+          "contentType": "application/json",
+          "encoded": false
+        },
+        "headers": {
+          "Content-Type": [
+            "application/json"
+          ]
+        },
+        "matchingRules": {
+          "body": {
+            "$.id": {
+              "combine": "AND",
+              "matchers": [
+                {
+                  "match": "integer"
+                },
+                {
+                  "match": "regex",
+                  "regex": "[0-9]*"
+                }
+              ]
+            },
+            "$.name": {
+              "combine": "AND",
+              "matchers": [
+                {
+                  "match": "regex",
+                  "regex": "[a-zA-Z ]*"
+                }
+              ]
+            }
+          }
+        },
+        "status": 200
+      },
+      "transport": "https",
+      "type": "Synchronous/HTTP"
+    },
+    {
+      "comments": {
+        "text": [
+
+        ]
+      },
+      "description": "A request for a user list",
+      "key": "2149737f",
+      "pending": false,
+      "providerStates": [
+        {
+          "name": "A running user service"
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "path": "/users"
+      },
+      "response": {
+        "body": {
+          "content": [
+            {
+              "id": 1,
+              "name": "Jane Doe"
+            },
+            {
+              "id": 2,
+              "name": "John Doe"
+            }
+          ],
+          "contentType": "application/json",
+          "encoded": false
+        },
+        "headers": {
+          "Content-Type": [
+            "application/json"
+          ]
+        },
+        "matchingRules": {
+          "body": {
+            "$[0].id": {
+              "combine": "AND",
+              "matchers": [
+                {
+                  "match": "integer"
+                },
+                {
+                  "match": "regex",
+                  "regex": "[0-9]*"
+                }
+              ]
+            },
+            "$[0].name": {
+              "combine": "AND",
+              "matchers": [
+                {
+                  "match": "regex",
+                  "regex": "[a-zA-Z ]*"
+                }
+              ]
+            },
+            "$[1].id": {
+              "combine": "AND",
+              "matchers": [
+                {
+                  "match": "integer"
+                },
+                {
+                  "match": "regex",
+                  "regex": "[0-9]*"
+                }
+              ]
+            },
+            "$[1].name": {
+              "combine": "AND",
+              "matchers": [
+                {
+                  "match": "regex",
+                  "regex": "[a-zA-Z ]*"
+                }
+              ]
+            }
+          }
+        },
+        "status": 200
+      },
+      "transport": "https",
+      "type": "Synchronous/HTTP"
+    }
+  ],
+  "metadata": {
+    "pact-jvm": {
+      "version": "4.4.2"
+    },
+    "pactSpecification": {
+      "version": "4.0"
+    }
+  },
+  "provider": {
+    "name": "UserServiceJUnit5"
+  }
+}

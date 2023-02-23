@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pact.consumer.producer.PactConsumerJUnit5Test" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-02-23T10:04:55" hostname="SivaJs-MacBook-Pro.local" time="0.314">
+  <properties/>
+  <testcase name="getAllUsers(MockServer)" classname="com.pact.consumer.producer.PactConsumerJUnit5Test" time="0.201"/>
+  <testcase name="getUserById(MockServer)" classname="com.pact.consumer.producer.PactConsumerJUnit5Test" time="0.112"/>
+  <system-out><![CDATA[2023-02-23T15:34:55.833+05:30  INFO 22437 --- [    Test worker] a.c.d.p.c.junit5.PactConsumerTestExt     : Writing pacts out to default directory
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

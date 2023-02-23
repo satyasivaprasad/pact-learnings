@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pact.consumer.producer.PactProviderSpringJUnit5Test" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-02-23T10:04:56" hostname="SivaJs-MacBook-Pro.local" time="0.017">
+  <properties/>
+  <testcase name="UserConsumer - A request for a user" classname="com.pact.consumer.producer.PactProviderSpringJUnit5Test" time="0.012"/>
+  <testcase name="UserConsumer - A request for a user list" classname="com.pact.consumer.producer.PactProviderSpringJUnit5Test" time="0.004"/>
+  <system-out><![CDATA[2023-02-23T15:34:56.185+05:30  INFO 22437 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.pact.consumer.producer.Main for test class com.pact.consumer.producer.PactProviderSpringJUnit5Test
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.0)
+
+2023-02-23T15:34:56.201+05:30  WARN 22437 --- [    Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/Users/siva/.gradle/caches/modules-2/files-2.1/org.json/json/20220924/5aa95e7688f76c664af205c5937620f02688dfbc/json-20220924.jar!/org/json/JSONObject.class
+	jar:file:/Users/siva/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2023-02-23T15:34:56.201+05:30  INFO 22437 --- [    Test worker] c.p.c.p.PactProviderSpringJUnit5Test     : Starting PactProviderSpringJUnit5Test using Java 19 with PID 22437 (started by siva in /Users/siva/FACADE/FissionLabs/coe/pact-consumer-producer)
+2023-02-23T15:34:56.201+05:30  INFO 22437 --- [    Test worker] c.p.c.p.PactProviderSpringJUnit5Test     : No active profile set, falling back to 1 default profile: "default"
+2023-02-23T15:34:56.285+05:30  INFO 22437 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-02-23T15:34:56.285+05:30  INFO 22437 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-02-23T15:34:56.285+05:30  INFO 22437 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2023-02-23T15:34:56.323+05:30  INFO 22437 --- [    Test worker] c.p.c.p.PactProviderSpringJUnit5Test     : Started PactProviderSpringJUnit5Test in 0.13 seconds (process running for 3.375)
+2023-02-23T15:34:56.326+05:30  INFO 22437 --- [    Test worker] p.j.PactVerificationStateChangeExtension : Invoking state change method 'A running user service':SETUP
+
+Verifying a pact between UserConsumer and UserServiceJUnit5
+  [Using File build/pacts/UserConsumer-UserServiceJUnit5.json]
+  Given A running user service
+  A request for a user
+
+  Comments:
+
+    returns a response which
+      has status code 200 (OK)
+      has a matching body (OK)
+2023-02-23T15:34:56.335+05:30  WARN 22437 --- [    Test worker] a.c.d.p.p.DefaultTestResultAccumulator   : Not all of the 2 were verified. The following were missing:
+2023-02-23T15:34:56.335+05:30  WARN 22437 --- [    Test worker] a.c.d.p.p.DefaultTestResultAccumulator   :     A request for a user list
+2023-02-23T15:34:56.337+05:30  INFO 22437 --- [    Test worker] p.j.PactVerificationStateChangeExtension : Invoking state change method 'A running user service':SETUP
+
+Verifying a pact between UserConsumer and UserServiceJUnit5
+  [Using File build/pacts/UserConsumer-UserServiceJUnit5.json]
+  Given A running user service
+  A request for a user list
+
+  Comments:
+
+    returns a response which
+      has status code 200 (OK)
+      has a matching body (OK)
+2023-02-23T15:34:56.340+05:30  WARN 22437 --- [    Test worker] a.c.d.p.p.DefaultTestResultAccumulator   : Skipping publishing of verification results as it has been disabled (pact.verifier.publishResults is not 'true')
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

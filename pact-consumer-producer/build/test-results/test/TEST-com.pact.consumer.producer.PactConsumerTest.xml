@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pact.consumer.producer.PactConsumerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-02-23T10:04:55" hostname="SivaJs-MacBook-Pro.local" time="0.255">
+  <properties/>
+  <testcase name="getSpecificUserPact()" classname="com.pact.consumer.producer.PactConsumerTest" time="0.134"/>
+  <testcase name="getAllUsersPact()" classname="com.pact.consumer.producer.PactConsumerTest" time="0.121"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

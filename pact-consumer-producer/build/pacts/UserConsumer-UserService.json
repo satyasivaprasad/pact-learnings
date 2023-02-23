@@ -1,0 +1,58 @@
+{
+  "consumer": {
+    "name": "UserConsumer"
+  },
+  "interactions": [
+    {
+      "description": "A request for a user",
+      "request": {
+        "method": "GET",
+        "path": "/users/1"
+      },
+      "response": {
+        "body": {
+          "id": 1,
+          "name": "Jane Doe"
+        },
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "status": 200
+      }
+    },
+    {
+      "description": "A request for a user list",
+      "request": {
+        "method": "GET",
+        "path": "/users"
+      },
+      "response": {
+        "body": [
+          {
+            "id": 1,
+            "name": "Jane Doe"
+          },
+          {
+            "id": 2,
+            "name": "John Doe"
+          }
+        ],
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "status": 200
+      }
+    }
+  ],
+  "metadata": {
+    "pact-jvm": {
+      "version": "4.4.2"
+    },
+    "pactSpecification": {
+      "version": "3.0.0"
+    }
+  },
+  "provider": {
+    "name": "UserService"
+  }
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pact.consumer.producer.PactProviderTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-23T10:04:56" hostname="SivaJs-MacBook-Pro.local" time="0.005">
+  <properties/>
+  <testcase name="runConsumerPacts()" classname="com.pact.consumer.producer.PactProviderTest" time="0.005"/>
+  <system-out><![CDATA[2023-02-23T15:34:56.342+05:30  INFO 22437 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.pact.consumer.producer.PactProviderTest]: PactProviderTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-02-23T15:34:56.343+05:30  INFO 22437 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.pact.consumer.producer.Main for test class com.pact.consumer.producer.PactProviderTest
+  A request for a user
+    returns a response which
+      has status code 200 (OK)
+      has a matching body (OK)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
